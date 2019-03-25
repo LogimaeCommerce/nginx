@@ -26,7 +26,7 @@ server {
         resolver 8.8.8.8 8.8.4.4 valid=300s;
         resolver_timeout 5s;
 
-        ssl_dhparam /etc/nginx/ssl/certificates/dhparam.pem;
+        ssl_dhparam /etc/ssl/certs/dhparam.pem;
 
         add_header Strict-Transport-Security "max-age=31536000" always;
         add_header X-Frame-Options DENY;
