@@ -9,10 +9,10 @@ server {
         listen 443 ssl http2; 
         server_name domain.io www.domain.io;
 
-        #ssl on;
+        ssl on;
 
-        #ssl_certificate /etc/nginx/ssl/certificates/domain.crt;
-        #ssl_certificate_key /etc/nginx/ssl/certificates/domain.key;
+        ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+        ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
 
         ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
         ssl_prefer_server_ciphers on;
